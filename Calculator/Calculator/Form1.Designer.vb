@@ -31,6 +31,7 @@ Partial Class Form1
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.kq = New System.Windows.Forms.TextBox()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.SuspendLayout()
         '
         'Lab
@@ -108,11 +109,19 @@ Partial Class Form1
         Me.kq.Size = New System.Drawing.Size(100, 26)
         Me.kq.TabIndex = 8
         '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(420, 199)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 26)
+        Me.DateTimePicker1.TabIndex = 9
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(671, 327)
+        Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.kq)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ListView1)
@@ -138,4 +147,5 @@ Partial Class Form1
     Friend WithEvents ListView1 As ListView
     Friend WithEvents Label1 As Label
     Friend WithEvents kq As TextBox
+    Friend WithEvents DateTimePicker1 As DateTimePicker
 End Class
